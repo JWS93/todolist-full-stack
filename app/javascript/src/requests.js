@@ -26,7 +26,10 @@ export var postTask = function (content, successCB, errorCB) {
         content: content
       }
     },
-    success: successCB,
+    success: function (response) {
+      successCB;
+      indexTasks();
+    },
     error: errorCB
   }
 

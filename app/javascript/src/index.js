@@ -53,7 +53,6 @@ $(function() {
   $('#addTask').on('submit', function(event) {
     event.preventDefault();
     postTask($('#newToDo').val());
-    indexTasks();
   });
 
   $(document).on('click', '.remove', function() {
